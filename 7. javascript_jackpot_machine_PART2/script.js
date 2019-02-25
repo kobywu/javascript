@@ -51,7 +51,10 @@ function lastImage(el){
 function checkSlot(el){
 	if (a.src.match("images/cherry_slot.PNG") && b.src.match("images/cherry_slot.PNG") && c.src.match("images/cherry_slot.PNG")){
 		mySound.play();
-		console.log("All lights green!");
+		console.log("You win!");
+		a.classList.add("opaque");
+		b.classList.add("opaque");
+		c.classList.add("opaque");
 	} 
 	else{
 		//i wish this function would work when all lights are yellow, or all are red...
